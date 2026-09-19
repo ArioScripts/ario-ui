@@ -1,5 +1,12 @@
--- ARIO UI public loader template.
--- Replace RAW_URL with the raw URL of your generated single-file release.
-local RAW_URL = "YOUR_RAW_GITHUB_URL"
-local ARIO = loadstring(game:HttpGet(RAW_URL))()
-return ARIO
+local URL = "https://raw.githubusercontent.com/ArioScripts/ario-ui/main/ARIO.lua"
+
+local success, Library = pcall(function()
+    return loadstring(game:HttpGet(URL))()
+end)
+
+if not success then
+    warn("[ARIO UI] Failed to load: " .. tostring(Library))
+    return
+end
+
+return Library
