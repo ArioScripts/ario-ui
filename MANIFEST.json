@@ -1,0 +1,18 @@
+{
+  "name": "ARIO UI Framework",
+  "version": "2.0.0",
+  "author": "ARIO SCRIPTS",
+  "type": "Roblox Lua UI framework",
+  "modules": 60,
+  "built_in_themes": 25,
+  "component_api": [
+    "Set",
+    "Get",
+    "SetCallback",
+    "Bind",
+    "BindVisibility",
+    "SetVisible",
+    "SetEnabled",
+    "Destroy"
+  ]
+}
